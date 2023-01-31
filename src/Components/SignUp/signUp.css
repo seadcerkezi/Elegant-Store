@@ -1,0 +1,59 @@
+.signup-containter {
+  display: flex;
+  align-items: center;
+  background-color: #041e42;
+  background-image: url(https://omercerkezi.github.io/Ecommerce-App/static/media/b14.b3fa0d36c31c33d909c6.png);
+  padding: 40px 140px;
+  margin: 40px 0;
+}
+
+.signup-containter .texts {
+  flex: 1;
+}
+
+.signup-containter h2 {
+  color: white;
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.signup-containter p {
+  color: #818ea0;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.signup-containter span {
+  color: #ffbd27;
+}
+
+.signup-containter .input {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.signup-containter input {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  outline: none;
+  font-size: 14px;
+  height: 65px;
+  padding: 0 20px;
+  width: 60%;
+}
+.signup-containter button {
+  background-color: #088178;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+}

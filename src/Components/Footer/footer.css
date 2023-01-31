@@ -1,0 +1,12 @@
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px 80px;
+}
+
+.footer h2 {
+  font-size: 22px;
+  font-weight: 800;
+  padding-bottom: 20px;
+}

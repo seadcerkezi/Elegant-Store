@@ -1,0 +1,22 @@
+.cardScroll-container {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 3%;
+  gap: 20px;
+}
+
+.cardScroll-container .cards {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.cardScroll-container .cards img {
+  width: 400px;
+  object-fit: cover;
+}
+
+.cardScroll-container .title {
+  font-weight: 500;
+  font-size: 22px;
+}

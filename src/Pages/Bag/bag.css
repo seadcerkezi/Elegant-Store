@@ -1,0 +1,164 @@
+.bag {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 5% 7%;
+}
+
+/* .bag h2 {
+} */
+
+.bag .bag-container {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.bag-container .bag-left {
+  flex: 5;
+}
+
+.bag-container .bag-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* max-width: 23%; */
+}
+
+.bag-content .bag-item {
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+  border: 1px solid black;
+}
+
+.bag-content .bag-item img {
+  width: 200px;
+  height: 280px;
+}
+
+.bag-container .items-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  padding: 10px;
+}
+
+.items-container .items-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.items-container .items-info h3 {
+  color: #222;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.items-container .items-info span {
+  color: #1a1a1a;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 4px 0;
+}
+.items-container .items-info p {
+  font-size: 16px;
+  color: #465b52;
+  margin-bottom: 3px;
+}
+
+.items-container .sleeve {
+  flex-grow: 1;
+}
+
+.items-container .items-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.items-container .items-buttons span {
+  background-color: #f2f3f5;
+  font-size: 16px;
+  padding: 12px 10px 11px 10px;
+  /* border: 3px solid gray; */
+  /* padding: 8px 10px; */
+}
+
+.items-container .items-buttons .left-button {
+  border: none;
+  background-color: #f2f3f5;
+  padding: 7px 15px;
+  font-size: 22px;
+  border-radius: 50% 0 0 50%;
+  /* padding: px 5px; */
+}
+.items-container .items-buttons .right-button {
+  border: none;
+  background-color: #f2f3f5;
+  padding: 7px 15px;
+  font-size: 22px;
+  border-radius: 0 50% 50% 0;
+  /* padding: px 5px; */
+}
+
+.items-container .items-buttons button:hover {
+  cursor: pointer;
+}
+
+.items-container .item-price {
+  text-align: right;
+}
+.items-container .item-price p {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.bag-container .bag-right {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  gap: 20px;
+}
+
+.bag-container .bag-right .summary {
+  border: 1px solid black;
+  padding: 15px;
+}
+
+.bag-container .bag-right .summary h3 {
+  font-weight: 700;
+  font-size: 24px;
+  padding-bottom: 10px;
+}
+
+.bag-container .bag-right .summary div {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  color: #465b52;
+}
+
+.bag-container .bag-right .summary div h6 {
+  font-weight: 600;
+  color: black;
+  padding-bottom: 15px;
+}
+
+.bag-container .bag-right button {
+  background-color: black;
+  color: white;
+  padding: 7px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.bag-container .bag-right button:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  transition: all 0.5s ease;
+}
