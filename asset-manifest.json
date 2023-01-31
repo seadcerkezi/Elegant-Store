@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Elegant-Store/static/css/main.b93fe8d9.css",
+    "main.js": "/Elegant-Store/static/js/main.d8d427e3.js",
+    "static/media/banner-img.jpg": "/Elegant-Store/static/media/banner-img.c63197bf74c72ec05560.jpg",
+    "static/media/elegant-logo.png": "/Elegant-Store/static/media/elegant-logo.eb38bd1b3cf65880ecd9.png",
+    "index.html": "/Elegant-Store/index.html",
+    "main.b93fe8d9.css.map": "/Elegant-Store/static/css/main.b93fe8d9.css.map",
+    "main.d8d427e3.js.map": "/Elegant-Store/static/js/main.d8d427e3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b93fe8d9.css",
+    "static/js/main.d8d427e3.js"
+  ]
+}
