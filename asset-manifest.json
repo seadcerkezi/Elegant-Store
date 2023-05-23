@@ -1,15 +1,20 @@
 {
   "files": {
-    "main.css": "/Elegant-Store/static/css/main.b93fe8d9.css",
-    "main.js": "/Elegant-Store/static/js/main.d8d427e3.js",
+    "main.css": "/Elegant-Store/static/css/main.ae794f15.css",
+    "main.js": "/Elegant-Store/static/js/main.24c7f149.js",
     "static/media/banner-img.jpg": "/Elegant-Store/static/media/banner-img.c63197bf74c72ec05560.jpg",
     "static/media/elegant-logo.png": "/Elegant-Store/static/media/elegant-logo.eb38bd1b3cf65880ecd9.png",
+    "static/media/transparent-logo.png": "/Elegant-Store/static/media/transparent-logo.1ada4171d5678abd36a4.png",
+    "static/media/slick.svg": "/Elegant-Store/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/Elegant-Store/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/Elegant-Store/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/Elegant-Store/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Elegant-Store/index.html",
-    "main.b93fe8d9.css.map": "/Elegant-Store/static/css/main.b93fe8d9.css.map",
-    "main.d8d427e3.js.map": "/Elegant-Store/static/js/main.d8d427e3.js.map"
+    "main.ae794f15.css.map": "/Elegant-Store/static/css/main.ae794f15.css.map",
+    "main.24c7f149.js.map": "/Elegant-Store/static/js/main.24c7f149.js.map"
   },
   "entrypoints": [
-    "static/css/main.b93fe8d9.css",
-    "static/js/main.d8d427e3.js"
+    "static/css/main.ae794f15.css",
+    "static/js/main.24c7f149.js"
   ]
 }
