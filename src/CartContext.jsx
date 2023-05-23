@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext } from "react";
 import useLocalStorage from "./useLocalStorage";
 
 const CartContext = createContext();
@@ -8,6 +8,7 @@ export function CartProvider({ children }) {
   const [favourite, setFavourite] = useLocalStorage("favorite", []);
 
   const onAdd = (item, color, size) => {
+    console.log("on add");
     const newProduct = { ...item, colors: color, size: size };
     // setCartItems((prev) => [...prev, item]);
     const exist = cartItems.find(
@@ -61,9 +62,10 @@ export function CartProvider({ children }) {
   };
 
   const addFavourite = (item) => {
-    setFavourite((prev) => [...prev, { ...item }]);
+    const favExist = favourite.find((fav) => item.id === fav.id);
+    console.log(" : ", favExist ? "True" : "False");
+    !favExist && setFavourite((prev) => [...prev, { ...item }]);
   };
-  console.log("Fav", favourite);
 
   const deleteFavourite = (item) => {
     setFavourite(favourite.filter((product) => item.id !== product.id));

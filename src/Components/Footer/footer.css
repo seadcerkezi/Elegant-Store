@@ -10,3 +10,10 @@
   font-weight: 800;
   padding-bottom: 20px;
 }
+
+@media (max-width: 860px) {
+  .footer {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+}

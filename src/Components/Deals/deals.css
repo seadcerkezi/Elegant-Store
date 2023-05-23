@@ -1,70 +1,3 @@
-/* .deals {
-  display: flex;
-  gap: 10px;
-  padding: 35px 60px;
-  color: white;
-}
-
-.deals h4 {
-  font-weight: 300;
-  font-size: 20px;
-  padding-bottom: 15px;
-}
-.deals h2 {
-  font-weight: 800;
-  font-size: 28px;
-  padding-bottom: 15px;
-}
-.deals p {
-  font-weight: 500;
-  font-size: 14px;
-  padding-bottom: 15px;
-}
-
-.deals button {
-  background: transparent;
-  color: white;
-  border: 1px solid white;
-  font-weight: 600;
-  cursor: pointer;
-  transition: 0.2s;
-  padding: 11px 18px;
-}
-
-.deals button:hover {
-  background-color: #088178;
-  border: 1px solid #088178;
-}
-
-.deals .left-blur {
-  flex: 1;
-  background-color: rgba(110, 110, 110, 0.25);
-  background-size: cover;
-  border: 3px solid red;
-  filter: blur(2px);
-}
-.deals .right-blur {
-  flex: 1;
-  background-image: url(https://omercerkezi.github.io/Ecommerce-App/static/media/smBanner4.09d2ee96dfff2ca8d44c.jpg);
-  background-size: cover;
-}
-
-.deals .left-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 70vh;
-  background-image: url(https://omercerkezi.github.io/Ecommerce-App/static/media/smBanner1.75e5e1def96b8363509e.jpg);
-}
-.deals .right-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 70vh;
-} */
-
 .smBanner-container {
   display: flex;
   gap: 10px;
@@ -130,4 +63,16 @@
 .smBanner-container button:hover {
   background-color: #088178;
   border: 1px solid #088178;
+}
+
+@media (max-width: 860px) {
+  .smBanner-container {
+    flex-direction: column;
+    padding: 25px 40px;
+  }
+}
+@media (max-width: 660px) {
+  .smBanner-container {
+    padding: 20px 20px;
+  }
 }

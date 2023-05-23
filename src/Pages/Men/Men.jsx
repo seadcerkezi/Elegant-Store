@@ -1,14 +1,13 @@
 import { ControlOutlined } from "@ant-design/icons";
-import React, { useContext, useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import Select from "react-select";
-import CartContext from "../../CartContext";
 import Card from "../../Components/Cards/Card";
 import Footer from "../../Components/Footer/Footer";
 import SignUp from "../../Components/SignUp/SignUp";
 import { products } from "../../data";
-import { useParams } from "react-router-dom";
 import "./men.css";
+import AnimatedPage from "../../Components/AnimatedPage";
 
 const Men = () => {
   const [filters, setFilters] = useState({});
@@ -96,68 +95,70 @@ const Men = () => {
   }, [sort]);
 
   return (
-    <div className="men-container">
-      <div className="filter">
-        <h1 className="header-title">MEN </h1>
-        <button className="filter-button" onClick={clickedFilter}>
-          Filter & Sort
-          <ControlOutlined />
-        </button>
-      </div>
-      <div className={`${clicked ? "filter-select" : "filter-hidden"}`}>
-        <div className="product-select">
-          <Select
-            placeholder={"Color"}
-            options={filteredColors}
-            onChange={handleChangeColor}
-          />
-          <Select
-            onChange={handleChangeBrand}
-            placeholder={"Brand"}
-            options={filteredDescription}
-          />
-          <Select
-            onChange={handleChangeSleeve}
-            placeholder={"Sleeve Length"}
-            options={filteredSleeve}
-          />
-          <Select
-            onChange={handleChangeSize}
-            placeholder={"Size"}
-            options={filteredSize}
-          />
-          {Object.keys(filters).length > 0 && (
-            <button onClick={() => setFilters({})}>Clear All</button>
-          )}
+    <AnimatedPage>
+      <div className="men-container">
+        <div className="filter">
+          <h1 className="header-title">MEN </h1>
+          <button className="filter-button" onClick={clickedFilter}>
+            Filter & Sort
+            <ControlOutlined />
+          </button>
         </div>
-        <div className="product-sort">
-          <Select
-            placeholder={"Sort By"}
-            options={price}
-            onChange={(option) => setSort(option.value)}
-          />
+        <div className={`${clicked ? "filter-select" : "filter-hidden"}`}>
+          <div className="product-select">
+            <Select
+              placeholder={"Color"}
+              options={filteredColors}
+              onChange={handleChangeColor}
+            />
+            <Select
+              onChange={handleChangeBrand}
+              placeholder={"Brand"}
+              options={filteredDescription}
+            />
+            <Select
+              onChange={handleChangeSleeve}
+              placeholder={"Sleeve Length"}
+              options={filteredSleeve}
+            />
+            <Select
+              onChange={handleChangeSize}
+              placeholder={"Size"}
+              options={filteredSize}
+            />
+            {Object.keys(filters).length > 0 && (
+              <button onClick={() => setFilters({})}>Clear All</button>
+            )}
+          </div>
+          <div className="product-sort">
+            <Select
+              placeholder={"Sort By"}
+              options={price}
+              onChange={(option) => setSort(option.value)}
+            />
+          </div>
+        </div>
+        <div className="body">
+          {filteredProducts
+            ? filteredProducts.map((product) => (
+                <Link to={`/singleProduct/${product.id}`}>
+                  <Card product={product} />
+                </Link>
+              ))
+            : categoryProducts.map((product) => (
+                <Link to={`/singleProduct/${product.id}`}>
+                  <Card product={product} />
+                </Link>
+              ))}
+        </div>
+        <div>
+          <SignUp />
+        </div>
+        <div>
+          <Footer />
         </div>
       </div>
-      <div className="body">
-        {filteredProducts
-          ? filteredProducts.map((product) => (
-              <NavLink to={`/singleProduct/${product.id}`}>
-                <Card product={product} />
-              </NavLink>
-            ))
-          : categoryProducts.map((product) => (
-              <NavLink to={`/singleProduct/${product.id}`}>
-                <Card product={product} />
-              </NavLink>
-            ))}
-      </div>
-      <div>
-        <SignUp />
-      </div>
-      <div>
-        <Footer />
-      </div>
-    </div>
+    </AnimatedPage>
   );
 };
 

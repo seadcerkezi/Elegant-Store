@@ -1,0 +1,12 @@
+.filter h1 {
+  padding: 20px 20px;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.search-container .body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}

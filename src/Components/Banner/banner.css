@@ -1,50 +1,67 @@
 .banner {
-    background-image: url(/src/images/banner-img.jpg);
-    /* background-repeat: no-repeat; */
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    background-color: rgb(219, 122, 122);
-    height: 90vh;
+  background-image: url(/src/images/banner-img.jpg);
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  background-color: rgb(219, 122, 122);
+  height: 90vh;
 }
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 .text {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding-left: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 80px;
 }
 
 .text h4 {
-    color: #faebd7;
-    font-size: 20px;
-    font-weight: 600;
+  color: #faebd7;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .text h2 {
-    color: #fff;
-    font-size: 46px;
-    line-height: 54px;
-    font-weight: 700;
+  color: #fff;
+  font-size: 46px;
+  line-height: 54px;
+  font-weight: 700;
 }
 
 .text .color {
-    color: #088178;
-    /* font-size: 100px; */
+  color: #088178;
+  /* font-size: 100px; */
 }
 
 .text p {
-    color: #faebd7;
-    font-weight: 600;
+  color: #faebd7;
+  font-weight: 600;
 }
 
 .text button {
-    background-color: transparent;
-    border: none;
-    color: #088178;
-    cursor: pointer;
-    font-size: 15px;
-    font-weight: 700;
+  background-color: transparent;
+  border: none;
+  color: #088178;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+@media (max-width: 860px) {
+  .banner {
+    background-size: cover;
+    background-position: 50%;
+  }
+}
+@media (max-width: 660px) {
+  .banner {
+    background-size: cover;
+    background-position: 55%;
+    padding: 0 5%;
+  }
+  .text {
+    padding: 0;
+  }
 }

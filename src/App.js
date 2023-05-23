@@ -9,6 +9,8 @@ import Men from "./Pages/Men/Men";
 import SingleProduct from "./Pages/SingleProduct/SingleProduct";
 import Women from "./Pages/Women/Woman";
 import Favourite from "./Pages/Favourite/Favourite";
+import Searchs from "./Pages/Searchs/Searchs";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
@@ -16,13 +18,14 @@ function App() {
       <CartProvider>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/Elegant-Store" element={<Home />} />
           <Route path="/men" element={<Men />} />
           <Route path="/women" element={<Women />} />
           <Route path="/kids" element={<Kids />} />
           <Route path="/singleProduct/:id" element={<SingleProduct />} />
           <Route path="/bag" element={<Bag />} />
           <Route path="/favourite" element={<Favourite />} />
+          <Route path="/search/:id" element={<Searchs />} />
         </Routes>
       </CartProvider>
     </div>

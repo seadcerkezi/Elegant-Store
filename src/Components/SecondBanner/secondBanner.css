@@ -1,55 +1,122 @@
 .second-banner {
-    display: flex;
-    background-color: red;
-    /* height: 50vh; */
+  display: flex;
+  overflow: hidden;
+  width: 100%;
 }
 
 .second-banner .left {
-    flex: 1;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    background-color: black;
-    color: white;
-    padding-left: 5%;
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  padding-left: 5%;
 }
 
 .second-banner h2 {
-    color: #fff;
-    font-weight: 600;
-    font-size: 42px;
-    line-height: normal;
-    margin-bottom: 5ox;
+  color: #fff;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: normal;
+  margin-bottom: 5px;
 }
 
 .second-banner h4 {
-    color: #fff;
-    font-size: 24px;
-    font-weight: 300;
-    letter-spacing: 2px;
-
+  color: #fff;
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 2px;
 }
 
 .second-banner button {
-    color: #fff;
-    border: 1px solid white;
-    background-color: black;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all .7s ease;
-    padding: 12px 26px;
-    margin-top: 15px;
+  color: #fff;
+  border: 1px solid white;
+  background-color: black;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.7s ease;
+  padding: 12px 26px;
+  margin-top: 15px;
 }
 
 .second-banner button:hover {
-    background-color: #fff;
-    color: black;
+  background-color: #fff;
+  color: black;
 }
 
 .second-banner img {
+  flex: 1;
+  object-fit: cover;
+  height: 70vh;
+}
+
+@media (max-width: 860px) {
+  /* .second-banner .left 
+    /* width: 100%; */
+  .second-banner .left {
+    padding-right: 5%;
+  }
+
+  .second-banner img {
     flex: 1;
     object-fit: cover;
-    height: 70vh;
+    height: 45vh;
+  }
 }
+@media (max-width: 660px) {
+  /* .second-banner .left 
+    /* width: 100%; */
+  .second-banner {
+    flex-direction: column-reverse;
+    height: 50vh;
+    margin-top: 5%;
+  }
+  .second-banner .left {
+    padding: 7%;
+    height: 40%;
+    align-items: center;
+  }
+  .second-banner img {
+    object-fit: cover;
+    height: 35vh;
+  }
+  .second-banner h2 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: normal;
+    margin-bottom: 5px;
+  }
+
+  .second-banner h4 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0;
+  }
+
+  .second-banner button {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 9px 22px;
+    margin-top: 15px;
+  }
+}
+
+/* @media (max-width: 660px) {
+  .second-banner {
+    flex-direction: column;
+  }
+  .second-banner .left {
+    flex: 2;
+    align-items: center;
+    padding: 10% 0;
+  }
+  .second-banner img {
+    flex: 1;
+    height: 30%;
+  }
+} */

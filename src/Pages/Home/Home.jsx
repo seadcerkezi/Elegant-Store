@@ -5,19 +5,21 @@ import Deals from "../../Components/Deals/Deals";
 import Footer from "../../Components/Footer/Footer";
 import SecondBanner from "../../Components/SecondBanner/SecondBanner";
 import SignUp from "../../Components/SignUp/SignUp";
+import Slick from "../../Components/Slick/Slick";
 import "./home.css";
+import AnimatedPage from "../../Components/AnimatedPage";
 
 const Home = () => {
   return (
-    <>
+    <AnimatedPage>
       <Banner />
-      <CardScroll title="Gear Up" />
+      <Slick title="Gear Up" arrivals="Gear Up" />
       <SecondBanner />
-      <CardScroll title="New Arrivals" />
+      <Slick title="New Arrivals" arrivals="New Arrivals" />
       <Deals />
       <SignUp />
       <Footer />
-    </>
+    </AnimatedPage>
   );
 };
 

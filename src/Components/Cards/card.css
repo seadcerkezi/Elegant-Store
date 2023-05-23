@@ -49,3 +49,40 @@
   color: grey;
   font-size: 14px;
 }
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin: 5%;
+}
+
+.empty .emtpy-header {
+  font-size: 46px;
+  line-height: 54px;
+  font-weight: 600;
+  color: #222;
+}
+
+.empty p {
+  color: #465b52;
+  margin-top: 15px;
+}
+
+.empty button {
+  background-color: #138a82;
+  color: white;
+  border: 2px solid #138a82;
+  width: 15%;
+  margin-top: 30px;
+  padding: 15px 10px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.empty button:hover {
+  background-color: white;
+  color: #138a82;
+  transition: 0.3s;
+}
