@@ -11,11 +11,13 @@ import Women from "./Pages/Women/Woman";
 import Favourite from "./Pages/Favourite/Favourite";
 import Searchs from "./Pages/Searchs/Searchs";
 import "react-toastify/dist/ReactToastify.css";
+import ScrollToTop from "./Components/ScrollToTop";
 
 function App() {
   return (
     <div className="App">
       <CartProvider>
+        <ScrollToTop />
         <Navbar />
         <Routes>
           <Route path="/Elegant-Store" element={<Home />} />
