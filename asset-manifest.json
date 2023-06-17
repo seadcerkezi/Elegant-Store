@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Elegant-Store/static/css/main.ae794f15.css",
-    "main.js": "/Elegant-Store/static/js/main.24c7f149.js",
+    "main.js": "/Elegant-Store/static/js/main.35d2c652.js",
     "static/media/banner-img.jpg": "/Elegant-Store/static/media/banner-img.c63197bf74c72ec05560.jpg",
     "static/media/elegant-logo.png": "/Elegant-Store/static/media/elegant-logo.eb38bd1b3cf65880ecd9.png",
     "static/media/transparent-logo.png": "/Elegant-Store/static/media/transparent-logo.1ada4171d5678abd36a4.png",
@@ -11,10 +11,10 @@
     "static/media/slick.woff": "/Elegant-Store/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Elegant-Store/index.html",
     "main.ae794f15.css.map": "/Elegant-Store/static/css/main.ae794f15.css.map",
-    "main.24c7f149.js.map": "/Elegant-Store/static/js/main.24c7f149.js.map"
+    "main.35d2c652.js.map": "/Elegant-Store/static/js/main.35d2c652.js.map"
   },
   "entrypoints": [
     "static/css/main.ae794f15.css",
-    "static/js/main.24c7f149.js"
+    "static/js/main.35d2c652.js"
   ]
 }
